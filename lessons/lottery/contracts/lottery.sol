@@ -11,7 +11,7 @@ contract Lottery {
     }
 
     function enter() public payable {
-        require(msg.value >= .001 ether && msg.sender!=manager);
+        require(msg.value >= .001 ether && manager!=msg.sender);
         total = total+msg.value;
         players.push(msg.sender);
     }
