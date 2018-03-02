@@ -3,7 +3,8 @@
 # dependencies
 lessons/*/node_modules/
 node_modules/
-
+#Secrets
+lessons/*/secrets.json
 # testing
 /coverage
 
